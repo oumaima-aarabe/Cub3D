@@ -1,38 +1,42 @@
 # Cub3D
 
-Cub3D is a collaborative project at 42 school aimed at constructing a dynamic view within a 3D maze. Leveraging the MiniLibX library, our task involves implementing raycasting reminiscent of the iconic Wolfenstein 3D game – a pioneer in the history of first-person shooters (FPS).
+## Introduction
+Welcome to Cub3D, a project inspired by the classic game Wolfenstein 3D! This project is a raycasting game engine implemented in C, using the MiniLibX library for graphics. The goal is to create a simplified version of the game engine capable of rendering 3D environments from a 2D map.
 
+## Description
+Cub3D is a project that explores the fundamentals of raycasting and graphics rendering. It reads a map file representing a 2D maze and renders a 3D perspective of the environment in real-time. The project also includes features like texture mapping, sprite rendering, and basic collision detection.
 
-<p align="center">
-  <img src="https://github.com/mcombeau/mcombeau/blob/main/42_badges/cub3de.png" alt="Cub3D 42 project badge"/>
-</p>
+## Features
+- **Raycasting Engine**: Cub3D implements a basic raycasting engine to render 3D environments from a 2D map.
+- **Texture Mapping**: Textures are applied to walls and sprites to enhance the visual experience.
+- **Map Parsing**: The project reads a simple map file to generate the game environment dynamically.
 
-## Status
+## Getting Started
+To run Cub3D on your local machine, follow these steps:
 
-Validated 14/01/2024. Grade: 115%.
+### Prerequisites
+Ensure you have the following installed:
+- C Compiler (e.g., GCC)
+- MiniLibX Graphics Library
 
+### Installation
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your_username/cub3d.git
+2.compile the source code using make or make bonus to get all features
+
+3.To run the Cub3D game, execute the following command in your terminal:
+    ```bash    
+    
+    ./cub3d path_to_map_file.cub
 ## Controls
-
-Controls for movement and rotation are:
-
-- `W`: move forward
-- `S`: move backward
-- `A`: strafe left
-- `D`: strafe right
-- `Q`: rotate left
-- `E`: rotate right
-- `mouse`: rotate by moving the mouse (bonus only)
-
-## Useful Resources
-
-Useful resources for this project are:
-
-- Minilibx: [hsmits MiniLibX documentation](https://harm-smits.github.io/42docs/libs/minilibx)
-- Minilibx: [gontjarow's MiniLibX tutorial](https://gontjarow.github.io/MiniLibX/)
-- Xlib (for MLX events): [The Xlib Manual](https://tronche.com/gui/x/xlib/)
-- Raycasting: [Lode's Computer Graphics Tutorial - Raycasting](https://lodev.org/cgtutor/raycasting.html)
-- Raycasting: [Permadi's Raycasting tutorial](https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/)
-- Movement: [Calculating heading in 2d games: Using trigonometric functions part 1](http://gamecodeschool.com/essentials/calculating-heading-in-2d-games-using-trigonometric-functions-part-1/)
-
----
-Made by OUAARABE && ICHAIQ
+- `W`: Move forward
+- `A`: Strafe left
+- `S`: Move backward
+- `D`: Strafe right
+- `Q`: Rotate left
+- `E`: Rotate right
+- `ESC`: Exit the game
+  you can use the mouse too to move in bonus
+##Contributers
+  #ichaiq && ouaarabe
