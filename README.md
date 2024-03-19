@@ -22,7 +22,7 @@ Ensure you have the following installed:
 ### Installation
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your_username/cub3d.git
+   git clone git@github.com:oumaima-aarabe/Cub3D.git
 2.compile the source code using make or make bonus to get all features
 
 3.To run the Cub3D game, execute the following command in your terminal:
