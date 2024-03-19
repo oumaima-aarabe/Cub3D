@@ -38,5 +38,6 @@ Ensure you have the following installed:
 - `E`: Rotate right
 - `ESC`: Exit the game
   you can use the mouse too to move in bonus
-##Contributers
-  #ichaiq && ouaarabe
+  
+## Contributers
+  # ichaiq && ouaarabe
