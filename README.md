@@ -14,10 +14,21 @@ Cub3D is a project that explores the fundamentals of raycasting and graphics ren
 ## Getting Started
 To run Cub3D on your local machine, follow these steps:
 
-### Prerequisites
-Ensure you have the following installed:
-- C Compiler (e.g., GCC)
-- MiniLibX Graphics Library
+ ## Requirements
+
+To build and run Cub3d on macOS, you need the following dependencies installed on your machine:
+
+- **MiniLibX (mlx)**: A simple X-Window (X11) programming API for rendering graphics.
+
+### Installing Dependencies on macOS
+
+For macOS, you can use Homebrew to install the necessary packages:
+
+ **Install Homebrew** (if not already installed):
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
 
 ### Installation
 1. Clone this repository to your local machine:
