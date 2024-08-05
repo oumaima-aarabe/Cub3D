@@ -49,6 +49,3 @@ For macOS, you can use Homebrew to install the necessary packages:
 - `E`: Rotate right
 - `ESC`: Exit the game
   you can use the mouse too to move in bonus
-  
-## Contributers
-  # ichaiq && ouaarabe
