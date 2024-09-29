@@ -37,9 +37,10 @@ For macOS, you can use Homebrew to install the necessary packages:
 2.compile the source code using make or make bonus to get all features
 
 3.To run the Cub3D game, execute the following command in your terminal:
-    ```bash    
-    
+
+  
     ./cub3d path_to_map_file.cub
+   
 ## Controls
 - `W`: Move forward
 - `A`: Strafe left
