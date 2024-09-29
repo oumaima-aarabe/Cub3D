@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichaiq <ichaiq@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ouaarabe <ouaarabe@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 22:22:12 by ichaiq            #+#    #+#             */
-/*   Updated: 2024/01/13 23:45:26 by ichaiq           ###   ########.fr       */
+/*   Updated: 2024/01/13 23:07:22 by ouaarabe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,5 @@ void	render(t_data *data)
 		draw_ray(i, data, ray);
 		ray.ray_ang = normalize(ray.ray_ang + (dtor(FOV) / WIDTH));
 	}
+	draw_2d_map(data);
 }

@@ -6,7 +6,7 @@
 /*   By: ichaiq <ichaiq@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 22:29:59 by ichaiq            #+#    #+#             */
-/*   Updated: 2024/01/13 23:57:44 by ichaiq           ###   ########.fr       */
+/*   Updated: 2024/01/13 23:22:14 by ichaiq           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,22 @@ void	handle_mlx_close(void *param)
 	clean_exit(data);
 }
 
+void	handle_mouse_move(double xpos, double ypos, void *param)
+{
+	t_data	*data;
+
+	(void) ypos;
+	data = (t_data *)param;
+	if (data->mouse_x < xpos || (data->mouse_x == xpos && xpos > 0))
+		data->map_data->player->rot_angle += (2 * M_PI) / 180;
+	else if (data->mouse_x > xpos || (data->mouse_x == xpos && xpos < 0))
+		data->map_data->player->rot_angle -= (2 * M_PI) / 180;
+	if (data->mouse_x != xpos)
+		data->mouse_x = xpos;
+	data->map_data->player->rot_angle = \
+		normalize(data->map_data->player->rot_angle);
+}
+
 int	render_window(t_data *data)
 {
 	if (!init_mlx_data(data))
@@ -48,6 +64,7 @@ int	render_window(t_data *data)
 	init_mlx_world(data);
 	mlx_loop_hook(data->mlx, render_world, data);
 	mlx_close_hook(data->mlx, handle_mlx_close, (void *)data);
+	mlx_cursor_hook(data->mlx, handle_mouse_move, data);
 	mlx_loop(data->mlx);
 	mlx_terminate(data->mlx);
 	return (1);

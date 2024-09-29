@@ -1,13 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   inits.c                                            :+:      :+:    :+:   */
+/*   player.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichaiq <ichaiq@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ouaarabe <ouaarabe@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/04 14:31:45 by ichaiq            #+#    #+#             */
-/*   Updated: 2023/11/05 16:17:26 by ichaiq           ###   ########.fr       */
+/*   Created: 2023/11/07 15:53:56 by ichaiq            #+#    #+#             */
+/*   Updated: 2024/01/13 18:36:24 by ouaarabe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils.h"
+#ifndef PLAYER_H
+# define PLAYER_H
+
+# include "../cub3d.h" 
+
+t_pos	*set_player_pos(int x, int y, char rot, t_player *data);
+t_pos	*move_player(float x, float y, t_map_data *data);
+
+#endif
